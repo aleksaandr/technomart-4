@@ -21,25 +21,29 @@
 
   <body>
     <!-- Для показа состояния ошибки у input добавьте к input класс invalid -->
-    <div class="page-wrapper">
-      <header class="page-header">
-        <div class="header-first-floor">
+    <header class="page-header">
+      <div class="header-first-floor">
+        <div class="header-first-floor-content">
           <span class="online-shop">Интернет-магазин строительных материалов и инструментов для ремонта</span>
           <address class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
           <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </div>
-        <div class="header-second-floor">
+      </div>
+      <div class="header-second-floor">
+        <div class="header-second-floor-content">
           <a class="logo" href="index.html">
             <img src="images/content/logo.png" width="220" height="50" alt="Логотип Техномарта.">
           </a>
-          <label class="search-label">
-            <input class="search-input" type="search" placeholder="Поиск по сайту">
-            <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M8 16a8 8 0 1 1 6.32-3.094l5.387 5.387-1.414 1.414-5.387-5.387A7.965 7.965 0 0 1 8 16Zm6-8A6 6 0 1 1 2 8a6 6 0 0 1 12 0Z" />
-            </svg>
-            <span class="search-word">Поиск:</span>
-          </label>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="search-label">
+              <input class="search-input" type="search" placeholder="Поиск по сайту">
+              <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8 16a8 8 0 1 1 6.32-3.094l5.387 5.387-1.414 1.414-5.387-5.387A7.965 7.965 0 0 1 8 16Zm6-8A6 6 0 1 1 2 8a6 6 0 0 1 12 0Z" />
+              </svg>
+              <span class="search-word">Поиск:</span>
+            </label>
+          </form>
           <!-- Для показа авторизованного пользователя нужно переставить класс log-in-window-container-shown ко второму log-in-window-container -->
           <div class="log-in-window-container log-in-window-container-shown">
             <button class="log-in-button" type="button">
@@ -64,7 +68,7 @@
                 <div class="memory-container">
                   <label class="memory-label filter-makers-label">
                     <input class="filter-makers-checkbox" type="checkbox" name="remember-me" value="yes">
-                    <span class="filter-makers-custom-checkbox" tabindex="0"></span>
+                    <span class="filter-makers-custom-checkbox"></span>
                     Запомнить меня
                   </label>
                   <a class="forgot-password" href="#">Забыл пароль</a>
@@ -93,7 +97,9 @@
             </div>
           </div>
         </div>
-        <nav class="navigation">
+      </div>
+      <nav class="navigation">
+        <div class="navigation-content">
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="#">
@@ -146,15 +152,17 @@
               <a class="order-link" href="#">Оформить заказ</a>
             </li>
           </ul>
-        </nav>
-      </header>
-      <main class="page-main">
-        <p class="mistake">404</p>
-        <p class="mistake-description">Ошибка! <br> К сожалению, запрашиваемая <br> Вами страница не найдена...</p>
-        <a class="to-index-link" href="index.html">Вернуться на главную...</a>
-      </main>
-      <footer class="page-footer">
-        <div class="footer-first-floor">
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <p class="mistake">404</p>
+      <p class="mistake-description">Ошибка! <br> К сожалению, запрашиваемая <br> Вами страница не найдена...</p>
+      <a class="to-index-link" href="index.html">Вернуться на главную...</a>
+    </main>
+    <footer class="page-footer">
+      <div class="footer-first-floor">
+        <div class="footer-first-floor-content">
           <div class="footer-first-column">
             <a class="logo footer-logo" href="index.html">
               <img src="images/content/logo.png" width="220" height="56" alt="Логотип Техномарта.">
@@ -204,7 +212,7 @@
             <form class="footer-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="footer-label">
                 <span class="footer-label-text">Получайте лучшие предложения</span>
-                <input class="footer-input" type="email" placeholder="email@example.com" required>
+                <input class="footer-input" type="email" placeholder="email@example.com" name="email" required>
                 <span class="invalid-text invalid-text-footer">Email должен содержать символ @!</span>
               </label>
               <button class="footer-cart-button" type="submit">
@@ -213,15 +221,17 @@
             </form>
           </div>
         </div>
-        <div class="footer-second-floor">
+      </div>
+      <div class="footer-second-floor">
+        <div class="footer-second-floor-content">
           <span class="copyright">© 2010–2019 <a class="copyright-link" href="#" target="_blank">Компания</a>
             «Техномарт» Все права
             защищены</span>
           <span class="made-by">Разработано — <a class="made-by-link" href="https://htmlacademy.ru/intensive/htmlcss"
               target="_blank">htmlacademy.ru</a></span>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 
 </html>
