@@ -188,6 +188,7 @@ body {
 
 .search-form {
   margin-right: auto;
+  transform: translateY(-3px);
 }
 
 .search-label {
